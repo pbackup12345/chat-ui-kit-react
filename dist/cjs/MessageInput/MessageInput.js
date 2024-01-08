@@ -434,11 +434,14 @@ function MessageInputInner(_ref, ref) {
   });
 
   // Set focus
-  (0, _react.useEffect)(function () {
-    if (autoFocus === true) {
-      focus();
-    }
-  }, []);
+  (0, _react.useEffect)(
+    function () {
+      if (autoFocus === true) {
+        focus();
+      }
+    },
+    [autoFocus]
+  );
 
   // Update scroll
   (0, _react.useEffect)(function () {

@@ -408,11 +408,14 @@ function MessageInputInner(_ref, ref) {
   });
 
   // Set focus
-  useEffect(function () {
-    if (autoFocus === true) {
-      focus();
-    }
-  }, []);
+  useEffect(
+    function () {
+      if (autoFocus === true) {
+        focus();
+      }
+    },
+    [autoFocus]
+  );
 
   // Update scroll
   useEffect(function () {

@@ -111,7 +111,7 @@ function MessageInputInner(
     if (autoFocus === true) {
       focus();
     }
-  }, []);
+  }, [autoFocus]);
 
   // Update scroll
   useEffect(() => {
