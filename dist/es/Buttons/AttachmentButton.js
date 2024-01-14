@@ -49,6 +49,7 @@ import { prefix } from "../settings";
 import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperclip } from "@fortawesome/free-solid-svg-icons/faPaperclip";
+import { faMicrophone } from "@fortawesome/free-solid-svg-icons";
 export var AttachmentButton = function AttachmentButton(_ref) {
   var className = _ref.className,
     children = _ref.children,
@@ -59,7 +60,7 @@ export var AttachmentButton = function AttachmentButton(_ref) {
     _extends({}, rest, {
       className: classNames(cName, className),
       icon: /*#__PURE__*/ React.createElement(FontAwesomeIcon, {
-        icon: faPaperclip,
+        icon: faMicrophone,
       }),
     }),
     children

@@ -5,6 +5,7 @@ import { prefix } from "../settings";
 import Button from "./Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperclip } from "@fortawesome/free-solid-svg-icons/faPaperclip";
+import { faMicrophone } from "@fortawesome/free-solid-svg-icons";
 
 export const AttachmentButton = ({ className, children, ...rest }) => {
   const cName = `${prefix}-button--attachment`;
@@ -13,7 +14,7 @@ export const AttachmentButton = ({ className, children, ...rest }) => {
     <Button
       {...rest}
       className={classNames(cName, className)}
-      icon={<FontAwesomeIcon icon={faPaperclip} />}
+      icon={<FontAwesomeIcon icon={faMicrophone} />}
     >
       {children}
     </Button>

@@ -11,6 +11,7 @@ var _settings = require("../settings");
 var _Button = _interopRequireDefault(require("./Button"));
 var _reactFontawesome = require("@fortawesome/react-fontawesome");
 var _faPaperclip = require("@fortawesome/free-solid-svg-icons/faPaperclip");
+var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
 var _excluded = ["className", "children"];
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : { default: obj };
@@ -72,7 +73,7 @@ var AttachmentButton = (exports.AttachmentButton = function AttachmentButton(
       icon: /*#__PURE__*/ _react["default"].createElement(
         _reactFontawesome.FontAwesomeIcon,
         {
-          icon: _faPaperclip.faPaperclip,
+          icon: _freeSolidSvgIcons.faMicrophone,
         }
       ),
     }),
